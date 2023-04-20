@@ -1,0 +1,63 @@
+@import "root";
+
+.icon {
+  width:  1.5em;
+  height: 1.5em;
+}
+
+.offers {
+  background: center / cover url('../media/images/about.jpg');
+}
+.offer {
+  background: var(--bs-dark);
+  background: linear-gradient(125deg, var(--bs-dark) 25%, rgba(var(--bs-dark-rgb), 0) 100%);
+}
+
+.text_crossed-out {
+  position: relative;
+  &:after {
+    content: '';
+
+    width: 125%;
+    height: .25rem;
+    background-color: var(--bs-light);
+
+    border-radius: 1000rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    Translate: -50% -50%;
+    Rotate: -25deg;
+  }
+}
+
+
+.rect {
+  &:before {
+    content: '';
+    float: right;
+    padding-bottom: 100%;
+  }
+
+  &_50 { &:before { padding-bottom: 50%; } }
+  &_75 { &:before { padding-bottom: 75%; } }
+}
+
+
+.blur {
+  backdrop-filter: blur(5px);
+}
+
+
+.reason__description {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
+}
+
+
+.offer__body { width: 50%; }
+@media (min-width: 540px)  { .offer__body { width: 100%; } }
+@media (min-width: 720px)  { .offer__body { width: 50%; } }

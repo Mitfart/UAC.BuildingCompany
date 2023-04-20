@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Build Company</title>
+
+    <link href="./styles/main.css" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="header px-3 fixed-top bg-light shadow">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex gap-3 align-items-center" href="#">
+                    <span class="logo-container rounded-circle bg-secondary d-flex align-items-center justify-content-center p-2">
+                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5"
+                             style="stroke: var(--bs-light)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                Renovation
+            </a>
+
+            <button class="navbar-toggler border-0 rounded-1"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#header__menu">
+                <svg class="icon"
+                     fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="header__menu" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item w-25"><a class="nav-link active" href="#offers">      Главная         </a></li>
+                        <li class="nav-item w-25"><a class="nav-link       " href="#about">       О нас           </a></li>
+                        <li class="nav-item w-25"><a class="nav-link       " href="#comments">    Комментарии     </a></li>
+                        <li class="nav-item w-25"><a class="nav-link       " href="#reasons">     Почему мы       </a></li>
+                        <li class="nav-item w-25"><a class="nav-link       " href="#projects">    Портфолио       </a></li>
+                        <li class="nav-item w-25"><a class="nav-link       " href="#work-scheme"> Алгоритм работы </a></li>
+                        <li class="nav-item w-25"><a class="nav-link       " href="#contact-form">Оставить заявку </a></li>
+                        <li class="nav-item w-25"><a class="nav-link       " href="#contacts">    Контакты        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div style="height: 4.5rem"></div> <!-- Header is Fixed, so we need to space all content by it height -->
+
+
+<main>
+    <section id="offers" class="offers">
+        <div class="offer px-3 pt-5 pb-2">
+            <div class="container py-4 text-light">
+                <div class="offer__body d-flex flex-column gap-4">
+                    <h1 class="text-uppercase d-flex gap-2">
+                        <b class="bg-primary rounded-5 flex-shrink-0" style="width: .25rem;"></b>
+                        <!-- <span class="text-primary"></span> -->
+                        Рассрочка на три месяца без процентов!
+                    </h1>
+
+                    <!-- <p class="opacity-75 m-0"> </p> -->
+
+                   <div class="timer fs-1" timer-date="Jan 15, 2023 15:37:25">
+                       <div class="timer__body d-inline-block">
+                           <div class="w-100 bg-secondary rounded" style="height: .125rem;"></div>
+                           <span class="timer__counter">DD:HH:MM</span>
+                           <div class="w-100 bg-secondary rounded" style="height: .125rem;"></div>
+                       </div>
+                   </div>
+
+                   <div class="d-flex align-items-center gap-4">
+                       <a class="btn btn-primary p-2 px-4 text-light fs-5" href="#">
+                           Подробнее
+                       </a>
+                       <!-- <p class="opacity-50 m-0 text_crossed-out">20000р</p> -->
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+    <section id="about" class="about text-center d-flex align-items-center"
+             style="background: center / cover url('./media/images/about.jpg');">
+        <div class="py-5 text-light shadow w-100 position-relative">
+            <div class="bg w-100 h-100 bg-primary bg-opacity-75 position-absolute top-0 blur"
+                 style="z-index: 0"></div>
+            <div class="container d-flex flex-column align-items-center gap-3 position-relative">
+                <div class="decoration-image w-100" style="margin-bottom: -15%;">
+                    <img class="w-100 rounded-3" src="./media/images/about.jpg" alt="#">
+                </div>
+
+                <div class="w-75 bg-light p-4 text-dark d-flex flex-column gap-3 rounded" style="min-width: 300px">
+                    <h1 class="fw-bold mt-4"> О нас </h1>
+
+                    <div class="text text-start d-flex flex-column gap-3">
+                        <p class="opacity-75 m-0 fs-6">
+                            Наша студия уже более 10 лет занимается проектированием и обустройством жилых и
+                            общественных помещений. За эти годы мы зарекомендовали себя как ответственных и
+                            компетентных мастеров своего дела, ведь в нашей команде работают дизайнеры и архитекторы
+                            с богатым опытом, творческим, но в то же время скрупулезным отношением к делу.
+                        </p>
+
+                        <p class="opacity-75 m-0 fs-6 d-none d-md-block">
+                            Будь то квартира, офис или загородный дом - Вы всегда можете обратиться к нам и
+                            рассчитывать на полный комплекс услуг: замеры, формирование дизайн-проекта, эскизов,
+                            моделирование, подбор материалов и мебели, подсчет расходов, полная отделка помещения
+                            и т.д. Кроме того, Вы всегда можете воспользоваться нашими дополнительными услугами,
+                            такими как авторский надзор, декорирование и пр.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="comments" class="comments text-center d-flex p-3 py-5 bg-dark bg-opacity-10">
+       <div class="container d-flex flex-column align-items-center align-items-md-start gap-3 text-body">
+           <header class="w-100 d-flex justify-content-between align-items-center">
+               <h1> Отзывы клиентов </h1>
+
+               <div class="d-flex gap-2 p-2">
+                   <button class="btn btn-secondary p-2 rounded-2" data-bs-slide="prev" data-bs-target="#comments__slider_0"
+                           type="button">
+                       <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5"
+                            style="stroke: var(--bs-light)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M15.75 19.5L8.25 12l7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                       <span class="visually-hidden">Previous</span>
+                   </button>
+                   <button class="btn btn-secondary p-2 rounded-2" data-bs-slide="next" data-bs-target="#comments__slider_0"
+                           type="button">
+                       <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5"
+                            style="stroke: var(--bs-light)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                       <span class="visually-hidden">Next</span>
+                   </button>
+               </div>
+           </header>
+
+           <div class="carousel carousel-dark slide h-100 w-100 d-flex flex-column" data-bs-interval="1000"
+                id="comments__slider_0">
+               <div class="carousel-inner d-flex">
+                   <div class="carousel-item active">
+                       <div class="content d-flex flex-column flex-md-row gap-3">
+                           <div class="card shadow d-flex flex-column gap-3 p-4">
+                               <a class="text-nowrap fs-5 d-flex gap-2 align-items-center text-primary text-decoration-none"
+                                  href="$">
+                                   <div class="rounded-circle flex-shrink-0"
+                                        style="background: center / cover url('./media/images/about.jpg'); width: 2em; height: 2em;"></div>
+                                   Some User Name
+                               </a>
+                               <span class="opacity-75">
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                           </span>
+                           </div>
+                           <div class="card shadow d-flex flex-column gap-3 p-4">
+                               <a class="text-nowrap fs-5 d-flex gap-2 align-items-center text-primary text-decoration-none"
+                                  href="$">
+                                   <div class="rounded-circle flex-shrink-0"
+                                        style="background: center / cover url('./media/images/about.jpg'); width: 2em; height: 2em;"></div>
+                                   Some User Name
+                               </a>
+                               <span class="opacity-75">
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="carousel-item">
+                       <div class="content d-flex flex-column flex-md-row gap-3">
+                           <div class="card shadow d-flex flex-column gap-3 p-4">
+                               <a class="text-nowrap fs-5 d-flex gap-2 align-items-center text-primary text-decoration-none"
+                                  href="$">
+                                   <div class="rounded-circle flex-shrink-0"
+                                        style="background: center / cover url('./media/images/about.jpg'); width: 2em; height: 2em;"></div>
+                                   Some User Name
+                               </a>
+                               <span class="opacity-75">
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                           </span>
+                           </div>
+                           <div class="card shadow d-flex flex-column gap-3 p-4">
+                               <a class="text-nowrap fs-5 d-flex gap-2 align-items-center text-primary text-decoration-none"
+                                  href="$">
+                                   <div class="rounded-circle flex-shrink-0"
+                                        style="background: center / cover url('./media/images/about.jpg'); width: 2em; height: 2em;"></div>
+                                   Some User Name
+                               </a>
+                               <span class="opacity-75">
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="carousel-item">
+                       <div class="content d-flex flex-column flex-md-row gap-3">
+                           <div class="card shadow d-flex flex-column gap-3 p-4">
+                               <a class="text-nowrap fs-5 d-flex gap-2 align-items-center text-primary text-decoration-none"
+                                  href="$">
+                                   <div class="rounded-circle flex-shrink-0"
+                                        style="background: center / cover url('./media/images/about.jpg'); width: 2em; height: 2em;"></div>
+                                   Some User Name
+                               </a>
+                               <span class="opacity-75">
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                           </span>
+                           </div>
+                           <div class="card shadow d-flex flex-column gap-3 p-4">
+                               <a class="text-nowrap fs-5 d-flex gap-2 align-items-center text-primary text-decoration-none"
+                                  href="$">
+                                   <div class="rounded-circle flex-shrink-0"
+                                        style="background: center / cover url('./media/images/about.jpg'); width: 2em; height: 2em;"></div>
+                                   Some User Name
+                               </a>
+                               <span class="opacity-75">
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                               A well-known quote, contained in a blockquote element.
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+    <section id="reasons" class="reasons px-3">
+        <div class="container d-flex flex-column align-items-center gap-3 py-5 text-center">
+
+            <h1>
+                Причины заказать ремонт у нас
+            </h1>
+
+            <div class="d-flex flex-wrap gap-3">
+                <div class="w-100 d-flex gap-3 flex-wrap flex-sm-nowrap">
+                    <div class="reason w-100 p-5 d-flex flex-column align-items-center justify-content-center gap-3 rounded-2 shadow">
+                        <p class="reason__description m-0">
+                            Высокий уровень качества производства всех видов работ
+                        </p>
+                        <!-- <p class="reason__description"> text </p> -->
+                    </div>
+
+                    <div class="reason w-100 p-5 d-flex flex-column align-items-center justify-content-center gap-3 rounded-2 shadow reason_contrast bg-dark text-light">
+                        <p class="reason__description m-0">
+                            Работы выполняются экспертами, высококвалифицированными специалистами и их помощниками с минимальным опытом работы от 10 лет
+                        </p>
+                        <!-- <p class="reason__description"> text </p> -->
+                    </div>
+                </div>
+
+                <div class="w-100 d-flex gap-3 flex-wrap-reverse flex-sm-nowrap">
+                    <div class="reason w-100 p-5 d-flex flex-column align-items-center justify-content-center gap-3 rounded-2 shadow reason_contrast bg-dark text-light">
+                        <p class="reason__description m-0">
+                            Работа по договору
+                        </p>
+                        <!-- <p class="reason__description"> text </p> -->
+                    </div>
+
+                    <div class="reason w-100 p-5 d-flex flex-column align-items-center justify-content-center gap-3 rounded-2 shadow">
+                        <p class="reason__description m-0">
+                            Вы получаете строительные материалы из крупнейших торговых сетей Саранска по самым выгодным ценам!
+                        </p>
+                        <!-- <p class="reason__description"> text </p> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="projects bg-dark bg-opacity-10">
+        <div class="container d-flex flex-column align-items-center gap-4 py-5">
+
+            <div class="title d-flex flex-column align-items-center text-center w-md-50">
+                <h1>
+                    Выполненные объекты
+                </h1>
+                <p class="description">
+                    Примеры объектов с выполненным ремонтом
+                </p>
+            </div>
+
+            <div class="projects d-flex flex-column gap-4">
+
+                <div class="d-flex flex-column flex-xl-row gap-4">
+                    <div class="w-100 d-md-flex d-xl-block flex-column flex-md-row flex-xl-column rounded-3 overflow-hidden shadow rect rect_50 bg-light">
+                        <div class="w-100 overflow-hidden">
+
+                            <div class="carousel slide h-100 rect rect_50 d-flex" data-bs-ride="carousel"
+                                 id="project__slider_0">
+                                <div class="carousel-inner d-flex">
+                                    <div class="carousel-item active"
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                    <div class="carousel-item       "
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                    <div class="carousel-item       "
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                </div>
+
+                                <div class="d-flex gap-2 p-3 position-absolute bottom-0 end-0">
+                                    <button class="btn btn-dark p-2 rounded-2"
+                                            data-bs-slide="prev"
+                                            data-bs-target="#project__slider_0"
+                                            type="button">
+                                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.75 19.5L8.25 12l7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="btn btn-dark p-2 rounded-2"
+                                            data-bs-slide="next"
+                                            data-bs-target="#project__slider_0"
+                                            type="button">
+                                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-100 d-flex flex-column p-3 gap-3">
+                            <h2> Дизайн двухкомнатной квартиры </h2>
+                            <p class="opacity-75 flex-grow-1 d-none d-sm-block">В цветовом решении пространства
+                                придерживались мягких и светлых сочетаний и это связано не только с вкусовыми
+                                предпочтениями, но и, опять же, с родом деятельности хозяйки, поскольку квартира является
+                                еще и фоном для работы.</p>
+                            <div class="d-flex flex-column flex-lg-row justify-content-between p-3 bg-dark bg-opacity-10 rounded-2 gap-3 gap-lg-0">
+                                <div class="d-flex flex-column">
+                                    <p class="m-0 opacity-75 d-none d-lg-block"> Общая стоимость </p>
+                                    <h2 class="m-0"> от XXX XXX р </h2>
+                                </div>
+                                <a class="btn btn-primary d-flex align-items-center justify-content-center text-light px-sm-5 py-3 py-lg-0 shadow"
+                                   href="#">Хочу
+                                    такую!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 d-md-flex d-xl-block flex-column flex-md-row-reverse flex-xl-column rounded-3 overflow-hidden shadow rect rect_50 bg-light">
+                        <div class="w-100 overflow-hidden">
+
+                            <div class="carousel slide h-100 rect rect_50 d-flex" data-bs-ride="carousel"
+                                 id="project__slider_1">
+                                <div class="carousel-inner d-flex">
+                                    <div class="carousel-item active"
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                    <div class="carousel-item       "
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                    <div class="carousel-item       "
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                </div>
+
+                                <div class="d-flex gap-2 p-3 position-absolute bottom-0 end-0">
+                                    <button class="btn btn-dark p-2 rounded-2"
+                                            data-bs-slide="prev"
+                                            data-bs-target="#project__slider_1"
+                                            type="button">
+                                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.75 19.5L8.25 12l7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="btn btn-dark p-2 rounded-2"
+                                            data-bs-slide="next"
+                                            data-bs-target="#project__slider_1"
+                                            type="button">
+                                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-100 d-flex flex-column p-3 gap-3">
+                            <h2> Дизайн двухкомнатной квартиры </h2>
+                            <p class="opacity-75 flex-grow-1 d-none d-sm-block">В цветовом решении пространства
+                                придерживались мягких и светлых сочетаний и это связано не только с вкусовыми
+                                предпочтениями, но и, опять же, с родом деятельности хозяйки, поскольку квартира является
+                                еще и фоном для работы.</p>
+                            <div class="d-flex flex-column flex-lg-row justify-content-between p-3 bg-dark bg-opacity-10 rounded-2 gap-3 gap-lg-0">
+                                <div class="d-flex flex-column">
+                                    <p class="m-0 opacity-75 d-none d-lg-block"> Общая стоимость </p>
+                                    <h2 class="m-0"> от XXX XXX р </h2>
+                                </div>
+                                <a class="btn btn-primary d-flex align-items-center justify-content-center text-light px-sm-5 py-3 py-lg-0 shadow"
+                                   href="#">Хочу
+                                    такую!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-xl-row gap-4">
+
+                    <div class="w-100 d-md-flex d-xl-block flex-column flex-md-row flex-xl-column rounded-3 overflow-hidden shadow rect rect_50 bg-light">
+                        <div class="w-100 overflow-hidden">
+
+                            <div class="carousel slide h-100 rect rect_50 d-flex" data-bs-ride="carousel"
+                                 id="project__slider_2">
+                                <div class="carousel-inner d-flex">
+                                    <div class="carousel-item active"
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                    <div class="carousel-item       "
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                    <div class="carousel-item       "
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                </div>
+
+                                <div class="d-flex gap-2 p-3 position-absolute bottom-0 end-0">
+                                    <button class="btn btn-dark p-2 rounded-2"
+                                            data-bs-slide="prev"
+                                            data-bs-target="#project__slider_2"
+                                            type="button">
+                                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.75 19.5L8.25 12l7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="btn btn-dark p-2 rounded-2"
+                                            data-bs-slide="next"
+                                            data-bs-target="#project__slider_2"
+                                            type="button">
+                                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-100 d-flex flex-column p-3 gap-3">
+                            <h2> Дизайн двухкомнатной квартиры </h2>
+                            <p class="opacity-75 flex-grow-1 d-none d-sm-block">В цветовом решении пространства
+                                придерживались мягких и светлых сочетаний и это связано не только с вкусовыми
+                                предпочтениями, но и, опять же, с родом деятельности хозяйки, поскольку квартира является
+                                еще и фоном для работы.</p>
+                            <div class="d-flex flex-column flex-lg-row justify-content-between p-3 bg-dark bg-opacity-10 rounded-2 gap-3 gap-lg-0">
+                                <div class="d-flex flex-column">
+                                    <p class="m-0 opacity-75 d-none d-lg-block"> Общая стоимость </p>
+                                    <h2 class="m-0"> от XXX XXX р </h2>
+                                </div>
+                                <a class="btn btn-primary d-flex align-items-center justify-content-center text-light px-sm-5 py-3 py-lg-0 shadow"
+                                   href="#">Хочу
+                                    такую!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 d-md-flex d-xl-block flex-column flex-md-row-reverse flex-xl-column rounded-3 overflow-hidden shadow rect rect_50 bg-light">
+                        <div class="w-100 overflow-hidden">
+
+                            <div class="carousel slide h-100 rect rect_50 d-flex" data-bs-ride="carousel"
+                                 id="project__slider_3">
+                                <div class="carousel-inner d-flex">
+                                    <div class="carousel-item active"
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                    <div class="carousel-item       "
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                    <div class="carousel-item       "
+                                         style="background: center / cover url('./media/images/about.jpg');"></div>
+                                </div>
+
+                                <div class="d-flex gap-2 p-3 position-absolute bottom-0 end-0">
+                                    <button class="btn btn-dark p-2 rounded-2"
+                                            data-bs-slide="prev"
+                                            data-bs-target="#project__slider_3"
+                                            type="button">
+                                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.75 19.5L8.25 12l7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="btn btn-dark p-2 rounded-2"
+                                            data-bs-slide="next"
+                                            data-bs-target="#project__slider_3"
+                                            type="button">
+                                        <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-100 d-flex flex-column p-3 gap-3">
+                            <h2> Дизайн двухкомнатной квартиры </h2>
+                            <p class="opacity-75 flex-grow-1 d-none d-sm-block">В цветовом решении пространства
+                                придерживались мягких и светлых сочетаний и это связано не только с вкусовыми
+                                предпочтениями, но и, опять же, с родом деятельности хозяйки, поскольку квартира является
+                                еще и фоном для работы.</p>
+                            <div class="d-flex flex-column flex-lg-row justify-content-between p-3 bg-dark bg-opacity-10 rounded-2 gap-3 gap-lg-0">
+                                <div class="d-flex flex-column">
+                                    <p class="m-0 opacity-75 d-none d-lg-block"> Общая стоимость </p>
+                                    <h2 class="m-0"> от XXX XXX р </h2>
+                                </div>
+                                <a class="btn btn-primary d-flex align-items-center justify-content-center text-light px-sm-5 py-3 py-lg-0 shadow"
+                                   href="#">Хочу
+                                    такую!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="work-scheme" class="work-scheme px-3">
+        <div class="container d-flex flex-column align-items-center gap-3 py-5">
+
+            <h1> Алгоритм нашей работы </h1>
+
+            <div class="d-flex gap-4 flex-column flex-md-row">
+                <div class="flex-grow-1 d-flex flex-row flex-md-column align-items-center gap-3 text-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-primary"
+                         style="">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle p-3 bg-light shadow">
+                            <p class="h2 m-0 p-0 text-center" style="width: 1em; height: 1em;">
+                                1
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <h2 class="d-none d-md-block m-0"> Осмотр объекта, консультация </h2>
+                        <a class="btn btn-secondary text-light p-2 px-3" href="#">Записаться!</a>
+                    </div>
+                </div>
+                <div class="flex-grow-1 d-flex flex-row flex-md-column align-items-center gap-3 text-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-dark bg-opacity-10">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle p-3 bg-light shadow">
+                            <p class="h2 m-0 p-0 text-center" style="width: 1em; height: 1em;">
+                                2
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <h2 class="m-0"> Договор </h2>
+                        <p class="fw-light opacity-75 d-none d-md-block"> Составление сметы, составление договора </p>
+                    </div>
+                </div>
+                <div class="flex-grow-1 d-flex flex-row flex-md-column align-items-center gap-3 text-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-dark bg-opacity-10">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle p-3 bg-light shadow">
+                            <p class="h2 m-0 p-0 text-center" style="width: 1em; height: 1em;">
+                                3
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <h2 class="m-0"> Ремонт </h2>
+                        <p class="fw-light opacity-75 d-none d-md-block"> Содействие в закупке материалов и выполнение работ </p>
+                    </div>
+                </div>
+                <div class="flex-grow-1 d-flex flex-row flex-md-column align-items-center gap-3 text-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-secondary">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle p-3 bg-light shadow">
+                            <p class="h2 m-0 p-0 text-center" style="width: 1em; height: 1em;">
+                                4
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <h2 class="m-0"> Готово! </h2>
+                        <p class="fw-light opacity-75 d-none d-md-block"> Подписание акта сдачи объекта, завершение работ </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact-form" class="free-sizing px-3">
+        <div class="container d-flex flex-column align-items-center gap-4 py-5">
+
+            <div class="title d-flex flex-column align-items-center text-center w-md-50">
+                <h1>
+                    Заказать осмотр
+                </h1>
+                <!-- <p class="description d-none d-md-block"> text </p> -->
+            </div>
+
+            <form class="d-flex flex-column flex-md-row gap-2 w-75" role="search">
+                <input aria-label="Your Name"
+                       class="form-control rounded-1 px-3 py-2 shadow"
+                       placeholder="Ваше Имя"
+                       type="text">
+                <input aria-label="Your Phone"
+                       class="form-control rounded-1 px-3 py-2 shadow"
+                       placeholder="+7 (000) 000-0000"
+                       type="tel">
+                <input aria-label="Your E-mail"
+                       class="form-control rounded-1 px-3 py-2 shadow"
+                       placeholder="E-mail"
+                       type="email">
+                <button class="btn btn-secondary rounded-1 w-100 px-3 py-2 text-light shadow" type="submit">
+                    Заказать осмотр!
+                </button>
+            </form>
+
+        </div>
+    </section>
+</main>
+
+
+<footer id="contacts" class="footer bg-dark text-light px-3">
+   <div class="container pt-4">
+       <div class="d-flex gap-2 flex-column flex-lg-row gap-4">
+           <div class="d-flex flex-grow-1 align-items-start justify-content-center justify-content-sm-start">
+               <a class="navbar-brand d-flex gap-3 align-items-center" href="#">
+                   <div class="logo-container rounded-circle bg-light bg-opacity-25 d-flex align-items-center justify-content-center p-2">
+                       <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5"
+                            style="stroke: var(--bs-light)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" stroke-linecap="round"
+                                 stroke-linejoin="round"/>
+                       </svg>
+                   </div>
+                   <p class="m-0 position-relative">
+                       Renovation
+                       <span class="position-absolute opacity-50 m-0 d-none d-sm-block" style="top: 75%; left: 25%">
+                             - просто работают професионалы
+                       </span>
+                   </p>
+               </a>
+           </div>
+
+           <div class="d-flex flex-grow-1">
+               <div class="d-flex flex-grow-1">
+                   <ul class="navbar-nav flex-grow-1 d-flex flex-column align-items-center align-items-sm-start align-items-lg-end">
+                       <li class="nav-item"><a class="nav-link active" href="#">+7 495 123-45-67</a></li>
+                       <li class="nav-item"><a class="nav-link" href="#">Renovation@mail.ru</a></li>
+                       <li class="nav-item d-flex gap-2">
+                           <a class="nav-link" href="#FACEBOOK#">
+                               <div class="logo-container rounded-circle bg-light bg-opacity-25 d-flex align-items-center justify-content-center p-2">
+                                   <svg class="icon" fill="none" height="20" stroke="white"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="stroke: var(--bs-light)"
+                                        viewBox="0 0 20 20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M15 2.1665H12.5C11.395 2.1665 10.3352 2.60549 9.55376 3.38689C8.77236 4.16829 8.33337 5.2281 8.33337 6.33317V8.83317H5.83337V12.1665H8.33337V18.8332H11.6667V12.1665H14.1667L15 8.83317H11.6667V6.33317C11.6667 6.11216 11.7545 5.9002 11.9108 5.74391C12.0671 5.58763 12.279 5.49984 12.5 5.49984H15V2.1665Z"/>
+                                   </svg>
+                               </div>
+                           </a>
+                           <a class="nav-link" href="#INSTAGRAM#">
+                               <div class="logo-container rounded-circle bg-light bg-opacity-25 d-flex align-items-center justify-content-center p-2">
+                                   <svg class="icon" fill="none" height="20" stroke="white"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="stroke: var(--bs-light)"
+                                        viewBox="0 0 20 20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M14.1666 2.1665H5.83329C3.53211 2.1665 1.66663 4.03198 1.66663 6.33317V14.6665C1.66663 16.9677 3.53211 18.8332 5.83329 18.8332H14.1666C16.4678 18.8332 18.3333 16.9677 18.3333 14.6665V6.33317C18.3333 4.03198 16.4678 2.1665 14.1666 2.1665Z"/>
+                                       <path d="M13.3334 9.97476C13.4362 10.6683 13.3178 11.3766 12.9948 11.9989C12.6719 12.6213 12.161 13.1259 11.5347 13.4412C10.9085 13.7564 10.1987 13.8661 9.50653 13.7547C8.81431 13.6433 8.17484 13.3165 7.67907 12.8207C7.1833 12.325 6.85648 11.6855 6.7451 10.9933C6.63371 10.3011 6.74343 9.59134 7.05865 8.96507C7.37386 8.33881 7.87853 7.82788 8.50086 7.50496C9.12319 7.18205 9.8315 7.06359 10.525 7.16643C11.2325 7.27133 11.8874 7.60098 12.3931 8.10669C12.8988 8.61239 13.2285 9.26733 13.3334 9.97476Z"/>
+                                       <path d="M14.5834 5.9165H14.5917"/>
+                                   </svg>
+                               </div>
+                           </a>
+                           <a class="nav-link" href="#TWITCH#">
+                               <div class="logo-container rounded-circle bg-light bg-opacity-25 d-flex align-items-center justify-content-center p-2">
+                                   <svg class="icon" fill="none" height="20" stroke="white"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="stroke: var(--bs-light)"
+                                        viewBox="0 0 20 20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M9.16667 9.6665V6.33317M13.3333 9.6665V6.33317M17.5 2.1665H2.5V15.4998H6.66667V18.8332L10 15.4998H14.1667L17.5 12.1665V2.1665Z"/>
+                                   </svg>
+                               </div>
+                           </a>
+                           <a class="nav-link" href="#TWITTER#">
+                               <div class="logo-container rounded-circle bg-light bg-opacity-25 d-flex align-items-center justify-content-center p-2">
+                                   <svg class="icon" fill="none" height="20" stroke="white"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="stroke: var(--bs-light)"
+                                        viewBox="0 0 20 20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M19.1667 3.00008C18.3687 3.56298 17.4851 3.9935 16.55 4.27508C16.0482 3.698 15.3812 3.28899 14.6392 3.10335C13.8973 2.91771 13.1163 2.96441 12.4018 3.23712C11.6873 3.50984 11.0737 3.99541 10.6442 4.62818C10.2146 5.26094 9.98979 6.01036 10 6.77508V7.60841C8.53557 7.64639 7.08444 7.32159 5.77588 6.66295C4.46733 6.00431 3.34197 5.03228 2.50004 3.83341C2.50004 3.83341 -0.833293 11.3334 6.66671 14.6667C4.95048 15.8317 2.906 16.4159 0.833374 16.3334C8.33337 20.5001 17.5 16.3334 17.5 6.75008C17.4993 6.51796 17.477 6.28641 17.4334 6.05841C18.2839 5.21966 18.8841 4.16067 19.1667 3.00008V3.00008Z"/>
+                                   </svg>
+                               </div>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+
+       <div class="copyright py-2">
+           <p class="opacity-50 m-0 text-center text-sm-start">
+               © 2007 - 2023 Renovation. Все права защищены.
+           </p>
+       </div>
+   </div>
+</footer>
+
+
+</body>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./js/timer.js"></script>
+</html>
